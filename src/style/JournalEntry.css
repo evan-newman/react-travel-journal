@@ -1,0 +1,12 @@
+.entry {
+    display: flex;
+    width: 700px;
+    margin: 2rem;
+}
+
+.img {
+    width: 240px;
+    height: 325px;
+    border-radius: 1rem;
+    margin-right: 2rem;
+}
