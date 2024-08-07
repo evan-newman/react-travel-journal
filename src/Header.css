@@ -1,0 +1,21 @@
+header {
+    background-color: #F55A5A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 30px;
+}
+
+.fa-globe {
+    color: white;
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+.title {
+    margin: 0;
+    color: white;
+    font-size: 2rem;
+    font-weight: normal;
+}
