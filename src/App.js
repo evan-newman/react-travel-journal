@@ -4,15 +4,28 @@ import JournalEntry from './Components/JournalEntry';
 import data from './data';
 
 function App() {
-  const journalEntries = data.map(o => {
+  const journalEntries = data.map((o, i, arr) => {
+    if (i === arr.length - 1) {
       return (
-        <JournalEntry
-          key={o.id}
-          entry={o}
-        />
+        <div>
+          <JournalEntry
+            key={o.id}
+            entry={o}
+          />
+        </div>
+      )
+    } else {
+      return (
+        <div>
+          <JournalEntry
+            key={o.id}
+            entry={o}
+          />
+          <hr className="seperator"/>
+        </div>
       )
     }
-  )
+  })
 
   return (
     <div className="App">

@@ -8,11 +8,13 @@ function JournalEntry(props) {
     return (
         <div className="entry">
             <img className="img" src={require(`../images/${props.entry.img}`)} alt=""/>
-            <div className="entries--info">
-                <h3><i className="fa fa-map-marker"></i>{props.entry.location}</h3>
-                <a href="https://googlemaps.com">View on Google Maps</a>
-                <h1>{props.entry.name}</h1>
-                <h3>{dateStartStr} - {dateEndStr}</h3>
+            <div className="entry--info">
+                <div className="entry--location-info">
+                    <h3 className="entry--location-name"><i className="fa fa-map-marker"></i> {props.entry.location}</h3>
+                    <a className="entry--location-googlemaps" href={props.entry.googleMaps}>View on Google Maps</a>
+                </div>
+                <h1 className="entry--name">{props.entry.name}</h1>
+                <h3 className="entry--date">{dateStartStr} - {dateEndStr}</h3>
                 <p>{props.entry.description}</p>
             </div>
         </div>

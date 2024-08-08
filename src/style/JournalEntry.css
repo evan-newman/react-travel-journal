@@ -4,6 +4,34 @@
     margin: 2rem;
 }
 
+.fa-map-marker {
+    color: #F55A5A;
+}
+
+.entry--location-info {
+    display: flex;
+    align-items: center;
+}
+
+.entry--location-name {
+    margin-right: 1rem;
+    font-weight: normal;
+}
+
+.entry--location-googlemaps {
+    color: grey;
+}
+
+.entry--name {
+    margin-top: 0;
+}
+
+.entry--date {
+    margin-top: 2rem;
+}
+
+
+
 .img {
     width: 240px;
     height: 325px;
